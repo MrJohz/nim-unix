@@ -1,6 +1,7 @@
 # Nim-UNIX
 
 An attempt to play around with [Nimrod][], to see what happens.
+[nimrod]: <http://nimrod-lang.org/>
 
 ## How to use
 ```sh
