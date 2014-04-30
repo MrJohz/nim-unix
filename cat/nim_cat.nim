@@ -5,7 +5,10 @@ iterator chars(f: string): char =
   while not f.endOfFile():
     yield f.readChar()
 
-if paramCount() > 0:
-  for file in commandLineParams():
-    for character in chars(file):
-      stdout.write(character)
+proc main() =
+  if paramCount() > 0:
+    for file in commandLineParams():
+      for character in chars(file):
+        stdout.write(character)
+
+main()
