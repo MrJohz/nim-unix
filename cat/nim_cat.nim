@@ -10,5 +10,7 @@ proc main() =
     for file in commandLineParams():
       for character in chars(file):
         stdout.write(character)
+  else:
+    discard
 
 main()
